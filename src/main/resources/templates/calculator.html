@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Калькулятор</title>
+</head>
+<body>
+<h1>Калькулятор</h1>
+
+<form action="/result" method="post">
+    <input type="number" name="num1" step="any" required>
+    <select name="operation">
+        <option value="plus">+</option>
+        <option value="minus">-</option>
+        <option value="umnoz">*</option>
+        <option value="del">/</option>
+    </select>
+    <input type="number" name="num2" step="any" required>
+    <input type="submit" value="Вычислить">
+</form>
+
+<if test="${not empty result}">
+    <h1 th:text="${result}"></h1>
+</if>
+</body>
+</html>

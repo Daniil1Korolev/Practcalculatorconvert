@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+
+    <form method="get" action="/calculator">
+        <input type="submit" value="Калькулятор">
+    </form>
+
+    <form method="get" action="/converter">
+        <input type="submit" value="Конвертер деняк">
+    </form>
+
+
+
+    <form method="post" action="/home">
+        <h1> Проверка RequestParam </h1>
+        <input type="input" name="NamePrint">
+        <input type="submit" value="Отправить">
+    </form>
+
+<h2 th:text="${name}"></h2>
+
+
+</body>
+</html>
